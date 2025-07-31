@@ -2,58 +2,101 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Landing Page</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>InnovaTech - Future in Your Hands</title>
+  
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
   <header>
-    <div class="container nav">
-      <h1 class="logo">MyBrand</h1>
+    <div class="container">
+      <h1 class="logo">InnovaTech</h1>
       <nav>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div class="container">
-      <h2>Welcome to My Landing Page</h2>
-      <p>Create, innovate, and launch your ideas with style.</p>
-      <a href="#" class="btn">Get Started</a>
+    <div class="container hero-content" data-aos="fade-up">
+      <img src="https://source.unsplash.com/600x400/?technology,future" alt="Tech Image" class="hero-img"/>
+      <div>
+        <h2>Transforming Ideas into Digital Reality</h2>
+        <p>Power your startup with innovation-driven solutions tailored for growth and scalability.</p>
+        <a href="#contact" class="btn">Get Started</a>
+      </div>
     </div>
   </section>
 
-  <section class="features">
+  <section id="features" class="features">
     <div class="container">
-      <h2>Features</h2>
+      <h3 data-aos="fade-up">What We Offer</h3>
       <div class="feature-grid">
-        <div class="card animate">
-          <h3>Clean Design</h3>
-          <p>Modern, responsive layouts with smooth UI.</p>
+        <div class="feature-item" data-aos="zoom-in" data-aos-delay="100">
+          <i class="fas fa-laptop-code fa-2x"></i>
+          <h4>Custom Software</h4>
+          <p>Build scalable, high-performance applications that reflect your brand vision.</p>
         </div>
-        <div class="card animate">
-          <h3>Easy to Customize</h3>
-          <p>Well-structured code to help you make changes easily.</p>
+        <div class="feature-item" data-aos="zoom-in" data-aos-delay="200">
+          <i class="fas fa-robot fa-2x"></i>
+          <h4>AI Integration</h4>
+          <p>Automate repetitive tasks and make smart business decisions using machine learning.</p>
         </div>
-        <div class="card animate">
-          <h3>Responsive Layout</h3>
-          <p>Looks great on phones, tablets, and desktops.</p>
+        <div class="feature-item" data-aos="zoom-in" data-aos-delay="300">
+          <i class="fas fa-cloud fa-2x"></i>
+          <h4>Cloud Solutions</h4>
+          <p>Deploy secure, accessible systems with our modern cloud infrastructure services.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <footer>
-    <p>&copy; 2025 MyBrand. All rights reserved.</p>
+  <section id="about" class="about">
+    <div class="container" data-aos="fade-up">
+      <h3>About Us</h3>
+      <p>InnovaTech is your partner for innovation. We combine creativity, cutting-edge technology, and user-centered design to deliver high-quality software products. Whether you're a startup or an enterprise, we turn your ideas into scalable digital platforms.</p>
+    </div>
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <div class="container">
+      <h3 data-aos="fade-up">What Our Clients Say</h3>
+      <div class="testimonial-item" data-aos="fade-right">
+        <p>🌟 "InnovaTech transformed our legacy system into a sleek, modern platform. They truly exceeded expectations!"</p>
+        <h5>- Priya Sharma, TechWave</h5>
+      </div>
+      <div class="testimonial-item" data-aos="fade-left">
+        <p>🚀 "Fast delivery, clear communication, and a product that works perfectly. Highly recommended."</p>
+        <h5>- Jason Lee, CloudStart</h5>
+      </div>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <div class="container" data-aos="fade-up">
+      <h4>Get in Touch</h4>
+      <p>Email: innovatech@email.com | Phone: +91 9037278000</p>
+      <p>
+        <a href="#"><i class="fab fa-linkedin"></i></a> |
+        <a href="#"><i class="fab fa-twitter"></i></a> |
+        <a href="#"><i class="fab fa-instagram"></i></a>
+      </p>
+      <p>&copy; 2025 InnovaTech. All rights reserved.</p>
+    </div>
   </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init();</script>
 
 </body>
 </html>
